@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car e-shop</title>
+    <link href="style.css" rel="stylesheet" />
+   
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Nav Bar --> 
+    <header>
+      <nav class="navbar">
+         <a href="index.html" >
+            <img class="homeButton brand-title" src="images/home-button.png"></img>
+         </a>
+         <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+          <li><a href="auta.html">Auta</a></li>
+          <li><a href="pneu.html">Pneu</a></li>
+          <li><a href="kosik.html">&#128722;</a></li>
+        </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Main -->
+<main>
+ <div class ="cart">
+    <form>
+       <section class="row">
+          <div class="col-100">
+             <div class="container">
+                <h2>Váš košík</h2>
+                <hr>
+                <ul>
+                  <li class="cart-item">
+                    <div class="item-val">
+                     <label>Tesla</strong></label>
+                    </div>
+                    <div class="item-val">
+                        </div>
+                    <div class="item-val">
+                     <label>2.500.000 Kč</label>
+                    </div>
+                    <div class="item-val">
+                       <button>X</button>
+                    </div>
+                 </li>
+                   <li class="cart-item">
+                      <div class="item-val">
+                         <label>Zimní pneu - Tesla (1ks)</label>
+                      </div>
+                      <div class="item-val">
+                         <label for="quantity">Počet</label><input type="number" name="quantity" placeholder="1" min="1" max="10">
+                      </div>
+                      <div class="item-val">
+                        <label>2.800 Kč</label>
+                      </div>
+                      <div class="item-val">
+                         <button>X</button>
+                      </div>
+                   </li>
+                </ul>
+                <hr>
+                <li class="cart-item">
+                  <div class="item-val">
+                     <label>Celkem</label>
+                  </div>
+                    <div class="item-val">
+                     <label><strong>2.502.800 Kč</strong></label>
+                  </div>
+               </li>
+             </div>
+          </div>
+       </section>
+       <section class="row">
+          <div class="col-100">
+             <div class="container">
+                <h2>Způsob odběru</h2>
+                <hr>
+                <div>
+                   <input type="radio" id="osobni" name="transport" required>
+                   <label for="osobni">Pobočka Car e-shop - Praha 5</label><br>
+                   <input type="radio" id="zasilkovna" name="transport">
+                   <label for="zasilkovna">Auto domů (5000kč)</label><br>
+                   
+          </div>
+       </section>
+       <section class="row">
+          <div class="col-100">
+             <div class="container">
+                <div class="row">
+                   <div class="col-50">
+                      <h2>Fakturační údaje</h2>
+                      <hr>
+                      <div>
+                        <label for="wholename">Jméno a příjmení</label>
+                        <input type="text" id="wholename" required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                        <label for="telnumber">Telefonní číslo</label>
+                        <input type="text" id="telnumber" required>
+                        <label for="street">Ulice a č.p.</label>
+                        <input type="text" id="street" required>
+                        <label for="city">Město/obec</label>
+                        <input type="text" id="city" required>
+                        <label for="postalcode">PSČ</label>
+                        <input type="text" id="postalcode" required>
+                     </div>
+                   </div>
+             </div>
+       </section>
+       <section class="row">
+        <div class="col-100">
+           <div class="container">
+              <div class="row">
+                 <div class="col-50">
+                    <h2>Platba</h2>
+                    <label>*zvolte prosím typ karty, jiné platby zatím nepodporujeme</label>
+                    <hr>
+                    <div>
+                      <input type="radio" id="osobni" name="transport" required>
+                      <label for="osobni">Visa</label><br>
+                      <input type="radio" id="zasilkovna" name="transport">
+                      <label for="zasilkovna">Mastercard</label><br>
+                      
+                    </div>
+                 </div>
+              </div>
+              <input type="submit" value="Potvrdit údaje a přejít na platební bránu" class="btn">
+           </div>
+        </div>
+     </section>
+    </form>
+ </div>
+    </main>
+    <footer>
+      <p>Jedná se o studenstký projekt. Autori projektu: P.Schneider,A.Valasek,M.Perich</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
